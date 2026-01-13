@@ -68,7 +68,7 @@ export const AppShowcase = () => {
                     <div
                         key={step.id}
                         className={`showcase-row ${index % 2 === 0 ? 'row-normal' : 'row-reverse'} ${visibleSteps.includes(index) ? 'is-visible' : ''}`}
-                        ref={(el) => rowRefs.current[index] = el}
+                        ref={(el) => { rowRefs.current[index] = el; }}
                         data-index={index}
                     >
                         <div className="showcase-text">

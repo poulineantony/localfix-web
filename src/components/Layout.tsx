@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
 import '../App.css';
@@ -8,11 +8,9 @@ interface LayoutProps {
 }
 
 function Layout({ children }: LayoutProps) {
-    const [scrollY, setScrollY] = useState(0);
-
     useEffect(() => {
         const handleScroll = () => {
-            setScrollY(window.scrollY);
+            // Scroll handler for future use
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
