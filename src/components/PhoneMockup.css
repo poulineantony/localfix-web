@@ -1,0 +1,52 @@
+/* Phone Mockup */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.phone-mockup {
+    width: 320px;
+    height: 650px;
+    background: #1e293b;
+    border-radius: 48px;
+    padding: 12px;
+    box-shadow:
+        0 25px 50px -12px rgba(0, 0, 0, 0.5),
+        inset 0 0 0 2px #334155;
+    border: 4px solid #0f172a;
+    position: relative;
+}
+
+/* Dynamic Notch */
+.phone-mockup::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 24px;
+    background: #0f172a;
+    border-radius: 0 0 16px 16px;
+    z-index: 20;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 36px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-screen-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

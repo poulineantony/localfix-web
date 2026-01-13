@@ -1,0 +1,114 @@
+.legal-page {
+    min-height: 100vh;
+    padding: 6rem 0 4rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 50%, #f8fafc 100%);
+    position: relative;
+}
+
+.legal-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.05) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.legal-page .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+}
+
+.legal-page h1 {
+    font-size: 2.5rem;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.legal-page .last-updated {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--surface);
+}
+
+.legal-page section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.legal-page section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.legal-page h2 {
+    font-size: 1.75rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    border-left: 4px solid var(--primary);
+}
+
+.legal-page h3 {
+    font-size: 1.25rem;
+    color: var(--text);
+    margin: 1.5rem 0 0.75rem;
+    font-weight: 600;
+}
+
+.legal-page p {
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.legal-page ul {
+    margin: 1rem 0 1rem 2rem;
+    color: var(--text);
+}
+
+.legal-page li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.legal-page strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .legal-page {
+        padding: 4rem 0 3rem;
+    }
+
+    .legal-page .container {
+        padding: 0 1.5rem;
+    }
+
+    .legal-page h1 {
+        font-size: 2rem;
+    }
+
+    .legal-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .legal-page h3 {
+        font-size: 1.15rem;
+    }
+}

@@ -1,0 +1,89 @@
+/* App Showcase: Row by Row Layout */
+.app-showcase {
+    background: var(--surface);
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.showcase-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 8rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Visibility State */
+.showcase-row.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Alternating Layouts */
+.showcase-row.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.showcase-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.step-badge {
+    display: inline-block;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary);
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.showcase-text h3 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.showcase-text p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.showcase-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Removed CSS phone frame styles as images now contain frames */
+.showcase-visual img {
+    width: 280px;
+    height: auto;
+    border-radius: 40px;
+    /* Optional: adds subtle rounding if image corners are sharp */
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.showcase-visual img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .showcase-row {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .showcase-text {
+        max-width: 100%;
+    }
+}
