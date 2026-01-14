@@ -189,6 +189,7 @@ function App() {
             <h4>For Professionals</h4>
             <p>Grow your business with LocalFix.</p>
             <button className="btn btn-primary footer-btn">
+              <img src="/provider-icon.png" alt="Provider" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
               Join as Provider
             </button>
           </div>
