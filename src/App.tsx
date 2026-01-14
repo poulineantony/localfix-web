@@ -188,9 +188,10 @@ function App() {
           <div className="footer-col cta-col">
             <h4>For Professionals</h4>
             <p>Grow your business with LocalFix.</p>
-            <button className="btn btn-primary footer-btn">
-              Join as Provider
-            </button>
+            <a href="#" className="btn btn-primary footer-btn">
+              <img src="/provider-icon.png" alt="Provider App" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+              Download Provider App
+            </a>
           </div>
         </div>
         <div className="container footer-bottom">
