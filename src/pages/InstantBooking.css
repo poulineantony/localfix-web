@@ -94,10 +94,26 @@
 .booking-main {
     flex: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 4rem 1rem;
+    padding: 6rem 1rem 4rem;
+    /* Increased top padding to clear header */
     position: relative;
+
+
+    /* Ensure header stays on top */
+    .booking-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        /* Increased z-index */
+        padding: 1.25rem 0;
+        background: rgba(15, 23, 42, 0.85);
+        /* Slightly more opaque */
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
     z-index: 1;
 }
 
