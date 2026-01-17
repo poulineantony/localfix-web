@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, MapPin, Shield, Star, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Download, MapPin, Shield, Star, Instagram, Facebook, Twitter, Zap } from 'lucide-react';
 import { AppShowcase } from './components/AppShowcase';
 import './components/AppShowcase.css';
 import './App.css';
@@ -31,6 +31,10 @@ function App() {
           <nav className="nav">
             <a href="#features">Features</a>
             <a href="#how-it-works">How it Works</a>
+            <a href="/book" className="btn btn-accent">
+              <Zap size={18} />
+              Book Now
+            </a>
             <a href="#" className="btn btn-outline-sm">Join as Provider</a>
             <a href="#download" className="btn btn-primary">Get the App</a>
           </nav>
@@ -189,10 +193,10 @@ function App() {
             <h4>For Professionals</h4>
             <p>Grow your business with LocalFix.</p>
             <a href="#" className="btn btn-primary footer-btn">
-              <img src="/provider-icon.png" alt="Provider App" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
               Download Provider App
             </a>
           </div>
+
         </div>
         <div className="container footer-bottom">
           <p>&copy; 2026 LocalFix. All rights reserved.</p>
