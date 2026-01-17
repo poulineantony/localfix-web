@@ -2,12 +2,7 @@ import { useState, useEffect } from 'react';
 import { Key, Copy, RefreshCw, Eye, EyeOff, Check, AlertCircle } from 'lucide-react';
 import './AdminSettings.css';
 
-interface ApiKeyInfo {
-    key: string;
-    createdAt: string;
-    lastUsed?: string;
-    usageCount?: number;
-}
+
 
 export function AdminSettings() {
     const [apiKey, setApiKey] = useState<string>('');
