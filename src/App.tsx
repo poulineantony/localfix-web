@@ -36,12 +36,11 @@ function App() {
           <nav className="nav">
             <a href="#features">Features</a>
             <a href="#how-it-works">How it Works</a>
-            <a href="/book" className="btn btn-accent">
+            <a href="#" className="btn btn-outline-sm">Join as Provider</a>
+            <a href="/book" className="btn btn-primary">
               <Zap size={18} />
               Instant Booking
             </a>
-            <a href="#" className="btn btn-outline-sm">Join as Provider</a>
-            <a href="#download" className="btn btn-primary">Download App</a>
           </nav>
         </div>
       </header>

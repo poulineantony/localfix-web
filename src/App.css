@@ -946,7 +946,9 @@ body {
   .footer-btn {
     width: 100%;
     max-width: 280px;
-    margin: 0 auto;
+    margin: 0 auto !important;
+    /* Force centering */
+    align-self: center;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     white-space: nowrap;
