@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, MapPin, Shield, Star, Instagram, Facebook, Twitter, Zap, Home } from 'lucide-react';
+import { Download, MapPin, Shield, Star, Instagram, Facebook, Twitter, Zap } from 'lucide-react';
 import { AppShowcase } from './components/AppShowcase';
 import './components/AppShowcase.css';
 import './App.css';
@@ -34,10 +34,6 @@ function App() {
             <span className="bar"></span>
           </button>
           <nav className="nav">
-            <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-              <Home size={18} />
-              Home
-            </a>
             <a href="#features">Features</a>
             <a href="#how-it-works">How it Works</a>
             <a href="#" className="btn btn-outline-sm">Join as Provider</a>
