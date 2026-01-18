@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, ArrowRight, Smartphone, Download, Check, Key } from 'lucide-react';
+import { Phone, ArrowRight, Smartphone, Download, Check, Key, Home } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
 import './InstantBooking.css';
 
@@ -126,7 +126,10 @@ export function InstantBooking() {
                         </div>
                         <span className="booking-logo-text">LocalFix™</span>
                     </a>
-                    <a href="/" className="back-home">Back to Home</a>
+                    <a href="/" className="back-home">
+                        <Home size={18} />
+                        Back to Home
+                    </a>
                 </div>
             </header>
 
