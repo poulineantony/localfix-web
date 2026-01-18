@@ -910,11 +910,7 @@ body {
   }
 
   .services-col {
-    display: none;
-  }
-
-  .services-col {
-    display: none;
+    display: none !important;
   }
 
   /* Reset grid spans for single column flow */
@@ -924,14 +920,48 @@ body {
     grid-column: auto;
   }
 
-  /* Company and Services will naturally share a row */
-
   .brand-col,
   .footer-col {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  /* Style Company links as modern chips/pills */
+  .company-col {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .company-col h4 {
+    width: 100%;
+    /* Force title to own row */
+    margin-bottom: 1rem;
+  }
+
+  .company-col a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: all 0.2s;
+  }
+
+  .company-col a:hover,
+  .company-col a:active {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+    color: white;
   }
 
   .brand-col p {
@@ -946,7 +976,8 @@ body {
     margin-bottom: 1.5rem;
   }
 
-  .footer-col a {
+  /* Support links stay standard */
+  .support-col a {
     display: block;
     margin-bottom: 1rem;
     font-size: 1rem;
