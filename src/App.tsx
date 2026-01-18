@@ -59,14 +59,23 @@ function App() {
             <p>One-stop solution for residential and commercial maintenance. Book trusted electricians, plumbers, cleaners & more instantly.</p>
 
             <div className="sector-icons">
-              <div className="sector-item" title="Home">
-                <Home size={24} />
+              <div className="sector-item">
+                <div className="icon-box">
+                  <Home size={24} />
+                </div>
+                <span>Home</span>
               </div>
-              <div className="sector-item" title="Office">
-                <Briefcase size={24} />
+              <div className="sector-item">
+                <div className="icon-box">
+                  <Briefcase size={24} />
+                </div>
+                <span>Office</span>
               </div>
-              <div className="sector-item" title="Store">
-                <Store size={24} />
+              <div className="sector-item">
+                <div className="icon-box">
+                  <Store size={24} />
+                </div>
+                <span>Store</span>
               </div>
             </div>
 

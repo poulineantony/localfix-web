@@ -207,29 +207,42 @@ body {
 .sector-icons {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .sector-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: white;
-  border-radius: 16px;
-  color: var(--primary);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+  gap: 0.8rem;
   cursor: default;
 }
 
-.sector-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
+.sector-item .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 18px;
+  color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+.sector-item:hover .icon-box {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.2);
   color: var(--secondary);
+}
+
+.sector-item span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
 }
 
 .hero-btns {
