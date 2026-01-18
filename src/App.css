@@ -898,52 +898,54 @@ body {
   }
 
   .footer-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 1.5rem;
-    text-align: left;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
     padding: 0 1rem;
   }
 
-  /* Grid areas for mobile */
-  .brand-col {
-    grid-column: 1 / -1;
+  /* Reset grid spans for single column flow */
+  .brand-col,
+  .professionals-col,
+  .support-col {
+    grid-column: auto;
   }
-
-  /* Company, Services, Professionals, and Support will naturally flow into 2 columns */
 
   /* Company and Services will naturally share a row */
 
-  .brand-col {
-    text-align: left;
+  .brand-col,
+  .footer-col {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .brand-col p {
     max-width: 100%;
   }
 
-  .footer-col {
-    text-align: left;
+  .logo {
+    justify-content: center;
   }
 
   .footer-col h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .footer-col a {
     display: block;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
   }
 
   .footer-btn {
     width: 100%;
-    max-width: 100%;
-    padding: 0.6rem 0.5rem;
-    /* Reduced padding */
-    font-size: 0.8rem;
-    /* Smaller font */
-    white-space: normal;
-    /* Allow wrap */
-    line-height: 1.2;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    white-space: nowrap;
   }
 
   .footer-bottom {

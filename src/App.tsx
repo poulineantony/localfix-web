@@ -205,8 +205,8 @@ function App() {
           <div className="footer-col support-col">
             <h4>Need Help?</h4>
             <p>We are here for you 24/7.</p>
-            <a href="mailto:support@localfix.in">support@localfix.in</a>
-            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="mailto:support@localfix.app">support@localfix.app</a>
+            <a href="tel:+919876543210">+91 98765 4****</a>
           </div>
 
         </div>
