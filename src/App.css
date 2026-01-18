@@ -453,6 +453,11 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.footer .logo-icon {
+  background: transparent;
+  padding: 0;
+}
+
 .brand-col p {
   max-width: 300px;
   line-height: 1.6;

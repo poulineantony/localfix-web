@@ -24,7 +24,7 @@ function Layout({ children }: LayoutProps) {
                 <div className="container header-content">
                     <Link to="/" className="logo">
                         <div className="logo-icon">
-                            <img src="/logo.png" alt="LocalFix Logo" style={{ width: '45px', height: '45px', objectFit: 'contain' }} />
+                            <img src="/logo.png" alt="LocalFix Logo" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
                         </div>
                         <span className="logo-text">LocalFix</span>
                     </Link>
@@ -46,7 +46,7 @@ function Layout({ children }: LayoutProps) {
                     <div className="footer-col brand-col">
                         <div className="logo">
                             <div className="logo-icon">
-                                <img src="/logo.png" alt="LocalFix Logo" style={{ width: '29px', height: '29px', objectFit: 'contain' }} />
+                                <img src="/logo.png" alt="LocalFix Logo" style={{ width: '50px', height: '50px', objectFit: 'contain' }} />
                             </div>
                             <span className="logo-text">LocalFix</span>
                         </div>
