@@ -953,6 +953,8 @@ body {
   }
 
   .footer-bottom {
+    display: flex;
+    /* Override grid */
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;

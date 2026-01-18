@@ -38,10 +38,10 @@ function App() {
             <a href="#how-it-works">How it Works</a>
             <a href="/book" className="btn btn-accent">
               <Zap size={18} />
-              Book Now
+              Instant Booking
             </a>
             <a href="#" className="btn btn-outline-sm">Join as Provider</a>
-            <a href="#download" className="btn btn-primary">Get the App</a>
+            <a href="#download" className="btn btn-primary">Download App</a>
           </nav>
         </div>
       </header>
