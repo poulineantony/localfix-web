@@ -913,6 +913,10 @@ body {
     display: none;
   }
 
+  .services-col {
+    display: none;
+  }
+
   /* Reset grid spans for single column flow */
   .brand-col,
   .professionals-col,
