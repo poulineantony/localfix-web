@@ -764,6 +764,8 @@ body {
   .hero-btns {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    /* Fix left alignment */
     gap: 1rem;
   }
 
