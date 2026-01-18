@@ -905,11 +905,11 @@ body {
   }
 
   /* Grid areas for mobile */
-  .brand-col,
-  .professionals-col,
-  .support-col {
+  .brand-col {
     grid-column: 1 / -1;
   }
+
+  /* Company, Services, Professionals, and Support will naturally flow into 2 columns */
 
   /* Company and Services will naturally share a row */
 
@@ -937,6 +937,13 @@ body {
   .footer-btn {
     width: 100%;
     max-width: 100%;
+    padding: 0.6rem 0.5rem;
+    /* Reduced padding */
+    font-size: 0.8rem;
+    /* Smaller font */
+    white-space: normal;
+    /* Allow wrap */
+    line-height: 1.2;
   }
 
   .footer-bottom {
