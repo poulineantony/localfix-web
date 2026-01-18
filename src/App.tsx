@@ -26,8 +26,13 @@ function App() {
             <div className="logo-icon">
               <img src="/logo.png" alt="LocalFix Logo" style={{ width: '45px', height: '45px', objectFit: 'contain' }} />
             </div>
-            <span className="logo-text">LocalFix</span>
+            <span className="logo-text">LocalFix™</span>
           </div>
+          <button className="mobile-menu-btn" aria-label="Menu">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
           <nav className="nav">
             <a href="#features">Features</a>
             <a href="#how-it-works">How it Works</a>
@@ -168,7 +173,7 @@ function App() {
               <div className="logo-icon">
                 <img src="/logo.png" alt="LocalFix Logo" style={{ width: '29px', height: '29px', objectFit: 'contain' }} />
               </div>
-              <span className="logo-text">LocalFix</span>
+              <span className="logo-text">LocalFix™</span>
             </div>
             <p>Connecting you with the best local professionals for all your home service needs.</p>
           </div>

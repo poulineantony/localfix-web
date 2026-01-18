@@ -124,7 +124,7 @@ export function InstantBooking() {
                         <div className="booking-logo-icon">
                             <img src="/logo.png" alt="LocalFix Logo" />
                         </div>
-                        <span className="booking-logo-text">LocalFix</span>
+                        <span className="booking-logo-text">LocalFix™</span>
                     </a>
                     <a href="/" className="back-home">Back to Home</a>
                 </div>

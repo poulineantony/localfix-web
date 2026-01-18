@@ -222,6 +222,10 @@
     margin-bottom: 2rem;
 }
 
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
 .input-group label {
     display: block;
     font-weight: 600;

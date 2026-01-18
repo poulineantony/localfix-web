@@ -3,6 +3,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Top Bar */
@@ -58,6 +66,7 @@
   font-size: 1.5rem;
   color: var(--primary);
   letter-spacing: -0.05em;
+  white-space: nowrap;
 }
 
 .logo-icon {
@@ -704,13 +713,29 @@
     display: none;
   }
 
-  .btn-outline-sm {
-    display: none;
+  /* Hide auxiliary buttons on mobile to prevent crowding */
+  .btn-outline-sm,
+  .btn-accent {
+    display: none !important;
+    /* Force hide on mobile */
   }
 
-  .btn-primary {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
+  /* Adjust Get App button for mobile header */
+  .nav .btn-primary {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  /* If the user wants a menu, we need to implement it, but for now let's clean the header */
+  .mobile-menu-btn {
+    display: none;
+    /* Temporarily hidden until functionality added, relying on simple header */
+  }
+
+  /* Mobile Header Adjustment */
+  .header-content {
+    padding: 0 0.5rem;
   }
 
   /* Hero Section */
@@ -874,6 +899,7 @@
     grid-template-columns: 1fr;
     gap: 2.5rem;
     text-align: left;
+    padding: 0 1rem;
   }
 
   .brand-col {
@@ -907,6 +933,7 @@
     gap: 1.5rem;
     text-align: center;
     padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .footer-bottom p {
