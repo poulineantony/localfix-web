@@ -904,6 +904,10 @@ body {
     padding: 0 1rem;
   }
 
+  .services-col {
+    display: none;
+  }
+
   /* Reset grid spans for single column flow */
   .brand-col,
   .professionals-col,
