@@ -762,16 +762,19 @@ body {
   }
 
   .hero-btns {
+    width: 100%;
+    /* Ensure container is full width */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Fix left alignment */
     gap: 1rem;
   }
 
   .hero-btns .btn {
     width: 100%;
     max-width: 300px;
+    margin: 0 auto;
+    /* Force strict centering */
   }
 
   .hero-image {
