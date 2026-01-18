@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, MapPin, Shield, Star, Instagram, Facebook, Twitter, Zap, Home, Briefcase, Store } from 'lucide-react';
+import { Download, MapPin, Shield, Star, Instagram, Facebook, Twitter, Zap, Home } from 'lucide-react';
 import { AppShowcase } from './components/AppShowcase';
 import './components/AppShowcase.css';
 import './App.css';
@@ -34,6 +34,10 @@ function App() {
             <span className="bar"></span>
           </button>
           <nav className="nav">
+            <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+              <Home size={18} />
+              Home
+            </a>
             <a href="#features">Features</a>
             <a href="#how-it-works">How it Works</a>
             <a href="#" className="btn btn-outline-sm">Join as Provider</a>
@@ -57,27 +61,6 @@ function App() {
           >
             <h1>India’s #1 Home & Business Services App – <span className="highlight">LocalFix</span></h1>
             <p>One-stop solution for residential and commercial maintenance. Book trusted electricians, plumbers, cleaners & more instantly.</p>
-
-            <div className="sector-icons">
-              <div className="sector-item">
-                <div className="icon-box">
-                  <Home size={24} />
-                </div>
-                <span>Home</span>
-              </div>
-              <div className="sector-item">
-                <div className="icon-box">
-                  <Briefcase size={24} />
-                </div>
-                <span>Office</span>
-              </div>
-              <div className="sector-item">
-                <div className="icon-box">
-                  <Store size={24} />
-                </div>
-                <span>Store</span>
-              </div>
-            </div>
 
             <div className="hero-btns">
               <button className="btn btn-primary">
