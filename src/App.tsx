@@ -55,8 +55,8 @@ function App() {
               transition: 'transform 0.1s ease-out'
             }}
           >
-            <h1>Expert Local Services, <span className="highlight">On Demand</span></h1>
-            <p>From plumbing to painting, find trusted professionals in your neighborhood instantly.</p>
+            <h1>India’s #1 Home Services App – <span className="highlight">LocalFix™</span></h1>
+            <p>Book verified electricians, plumbers, cleaners, and more. Fast booking. Trusted professionals. LocalFix™.</p>
             <div className="hero-btns">
               <button className="btn btn-primary">
                 <Download size={20} />
