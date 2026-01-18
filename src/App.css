@@ -943,25 +943,28 @@ body {
   }
 
   .company-col a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1rem;
+    display: inline-block;
+    padding: 0 0.8rem;
     margin: 0;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 99px;
+    background: none;
+    border: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
     font-size: 0.9rem;
     color: var(--text-muted);
-    transition: all 0.2s;
+    transition: color 0.2s;
+    line-height: 1;
+  }
+
+  .company-col a:last-child {
+    border-right: none;
   }
 
   .company-col a:hover,
   .company-col a:active {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px);
+    background: none;
     color: white;
+    transform: none;
   }
 
   .brand-col p {
