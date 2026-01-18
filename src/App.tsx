@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, MapPin, Shield, Star, Instagram, Facebook, Twitter, Zap } from 'lucide-react';
+import { Download, MapPin, Shield, Star, Instagram, Facebook, Twitter, Zap, Home, Briefcase, Store } from 'lucide-react';
 import { AppShowcase } from './components/AppShowcase';
 import './components/AppShowcase.css';
 import './App.css';
@@ -55,8 +55,21 @@ function App() {
               transition: 'transform 0.1s ease-out'
             }}
           >
-            <h1>India’s #1 Home Services App – <span className="highlight">LocalFix™</span></h1>
-            <p>Book verified electricians, plumbers, cleaners, and more. Fast booking. Trusted professionals. LocalFix™.</p>
+            <h1>India’s #1 App for <span className="highlight">Home & Business</span></h1>
+            <p>One stop solution for all your residential and commercial maintenance needs. Trusted professionals, instant booking.</p>
+
+            <div className="sector-icons">
+              <div className="sector-item" title="Home">
+                <Home size={24} />
+              </div>
+              <div className="sector-item" title="Office">
+                <Briefcase size={24} />
+              </div>
+              <div className="sector-item" title="Store">
+                <Store size={24} />
+              </div>
+            </div>
+
             <div className="hero-btns">
               <button className="btn btn-primary">
                 <Download size={20} />
