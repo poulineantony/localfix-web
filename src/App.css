@@ -443,8 +443,8 @@ body {
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 4rem;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr 1.5fr;
+  gap: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -480,7 +480,8 @@ body {
   gap: 1rem;
 }
 
-.cta-col .social-links {
+.professionals-col .social-links,
+.support-col .social-links {
   margin-top: 1.5rem;
   justify-content: center;
 }
@@ -504,7 +505,8 @@ body {
   transform: translateY(-3px);
 }
 
-.cta-col p {
+.professionals-col p,
+.support-col p {
   margin-bottom: 1rem;
 }
 
@@ -896,11 +898,20 @@ body {
   }
 
   .footer-content {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
     text-align: left;
     padding: 0 1rem;
   }
+
+  /* Grid areas for mobile */
+  .brand-col,
+  .professionals-col,
+  .support-col {
+    grid-column: 1 / -1;
+  }
+
+  /* Company and Services will naturally share a row */
 
   .brand-col {
     text-align: left;

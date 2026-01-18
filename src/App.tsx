@@ -178,7 +178,7 @@ function App() {
             <p>Connecting you with the best local professionals for all your home service needs.</p>
           </div>
 
-          <div className="footer-col">
+          <div className="footer-col company-col">
             <h4>Company</h4>
             <a href="#">About Us</a>
             <a href="#">Careers</a>
@@ -186,7 +186,7 @@ function App() {
             <a href="mailto:contact@localfix.app">Contact</a>
           </div>
 
-          <div className="footer-col">
+          <div className="footer-col services-col">
             <h4>Services</h4>
             <a href="#">Plumbing</a>
             <a href="#">Electrical</a>
@@ -194,12 +194,19 @@ function App() {
             <a href="#">Painting</a>
           </div>
 
-          <div className="footer-col cta-col">
+          <div className="footer-col professionals-col">
             <h4>For Professionals</h4>
             <p>Grow your business with LocalFix.</p>
             <a href="#" className="btn btn-primary footer-btn">
               Download Provider App
             </a>
+          </div>
+
+          <div className="footer-col support-col">
+            <h4>Need Help?</h4>
+            <p>We are here for you 24/7.</p>
+            <a href="mailto:support@localfix.in">support@localfix.in</a>
+            <a href="tel:+919876543210">+91 98765 43210</a>
           </div>
 
         </div>
