@@ -26,7 +26,7 @@ function App() {
             <div className="logo-icon">
               <img src="/logo.png" alt="LocalFix Logo" style={{ width: '45px', height: '45px', objectFit: 'contain' }} />
             </div>
-            <span className="logo-text">LocalFix™</span>
+            <span className="logo-text">LocalFix</span>
           </div>
           <button className="mobile-menu-btn" aria-label="Menu">
             <span className="bar"></span>
@@ -55,7 +55,7 @@ function App() {
               transition: 'transform 0.1s ease-out'
             }}
           >
-            <h1>India’s #1 Home & Business Services App – <span className="highlight">LocalFix™</span></h1>
+            <h1>India’s #1 Home & Business Services App – <span className="highlight">LocalFix</span></h1>
             <p>One-stop solution for residential and commercial maintenance. Book trusted electricians, plumbers, cleaners & more instantly.</p>
 
             <div className="sector-icons">
