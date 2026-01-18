@@ -55,8 +55,8 @@ function App() {
               transition: 'transform 0.1s ease-out'
             }}
           >
-            <h1>India’s #1 App for <span className="highlight">Home & Business</span></h1>
-            <p>One stop solution for all your residential and commercial maintenance needs. Trusted professionals, instant booking.</p>
+            <h1>India’s #1 Home & Business Services App – <span className="highlight">LocalFix™</span></h1>
+            <p>One-stop solution for residential and commercial maintenance. Book trusted electricians, plumbers, cleaners & more instantly.</p>
 
             <div className="sector-icons">
               <div className="sector-item" title="Home">
